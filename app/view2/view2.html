@@ -6,6 +6,21 @@
         <input type="text" name="name" ng-model="ctrl.world.name">
         <input type="number" name="sizeRowsColumns" ng-model="ctrl.world.sizeRowsColumns">
         <input type="submit" ng-click="ctrl.createWorld()">
+
     </form>
+
+    Formularz dodadnia osady:
+    {{ctrl.colony}}
+    <form>
+        <input type="number" ng-model="ctrl.colony.userId">
+        <input type="number" ng-model="ctrl.colony.fieldId">
+        <input type="text" ng-model="ctrl.colony.colonyName">
+
+        <input type="submit" ng-click="ctrl.createColony()">
+
+    </form>
+    <div ng-if="ctrl.error()">{{ctrl.error()}}
+
+    </div>
 </div>
 
