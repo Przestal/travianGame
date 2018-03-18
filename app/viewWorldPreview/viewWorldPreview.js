@@ -1,15 +1,15 @@
 'use strict';
 
-angular.module('myApp.view2', ['ngRoute'])
+angular.module('myApp.viewWorldPreview', ['ngRoute'])
 
     .config(['$routeProvider', function ($routeProvider) {
-        $routeProvider.when('/view2', {
-            templateUrl: 'view2/view2.html',
-            controller: 'View2Ctrl'
+        $routeProvider.when('/viewWorldPreview', {
+            templateUrl: 'viewWorldPreview/viewWorldPreview.html',
+            controller: 'ViewWorldPreviewCtrl'
         });
     }])
 
-    .controller('View2Ctrl', ['$http', function ($http) {
+    .controller('ViewWorldPreviewCtrl', ['$http', function ($http) {
 
         this.colony = {
             userId: 1,

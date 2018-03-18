@@ -27,6 +27,10 @@
                     <input class="form-control" type="submit" ng-click="ctrl.createWorld()">
                 </div>
             </div>
+            <div class="col-md-12" ng-if="ctrl.serverResponded" id="server-response">
+                <div ng-if="ctrl.success">Success, new world has been created! </div>
+                <div class="text-warning" ng-if="!ctrl.success">Error! Unable to add this world! </div>
+            </div>
         </form>
     </div>
 </div>

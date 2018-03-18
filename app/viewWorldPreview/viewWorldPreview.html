@@ -1,0 +1,25 @@
+<h2>Preview world</h2>
+<div ng-controller="ViewWorldPreviewCtrl as ctrl">
+
+
+    <div class="container col-md-10">
+        <form>
+            <div class="row col-md-12 form-group">
+                <div class="col-md-3">
+                    <label for="worlds">Select world:</label>
+                </div>
+                <div class="col-md-6">
+                    <select id="worlds" ng-model="ctrl.worlds">
+
+                    </select>
+                </div>
+            </div>
+
+            <!--<div class="col-md-12" ng-if="ctrl.serverResponded" id="server-response">
+                <div ng-if="ctrl.success">Success, new world has been created! </div>
+                <div class="text-warning" ng-if="!ctrl.success">Error! Unable to add this world! </div>
+            </div>-->
+        </form>
+    </div>
+</div>
+
